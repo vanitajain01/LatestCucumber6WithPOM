@@ -29,7 +29,7 @@ public class ContactUsStep {
 		
 		ExcelReader reader = new ExcelReader();
 		List<Map<String,String>> testData = 
-				reader.getData("/Users/Abhi/IntellijProjects/contactus1.xlsx", sheetName);
+				reader.getData("./src/test/resources/dataSheets/contactus1.xlsx", sheetName);
 		
 		String heading = testData.get(rowNumber).get("subjectheading");
 		String email = testData.get(rowNumber).get("email");
